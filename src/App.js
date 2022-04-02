@@ -6,6 +6,18 @@ import './App.css';
 import Contacts from './components/propos/Contacts';
 import Card from './components/propos/Card';
 
+
+// create a new card component
+function createCard(contact){
+  return <Card
+            key={contact.id} 
+            name={contact.name}
+            img={contact.imgURL}
+            phone={contact.phone}
+            email={contact.email}/>
+}
+
+
 function App() {
   // const user = "souad";
   // var num = 10;
@@ -13,7 +25,13 @@ function App() {
   <div className='App'>
     <h1>Contact List</h1>
     <div className='contact-grid'>
-      <Card name= {Contacts[0].name}
+      {/* mapping throw contact array instead of repeating <Card /> 
+      and we should wrapped indide {} to be interpreted as JS*/}
+
+      {Contacts.map(createCard)}
+
+
+      {/* <Card name= {Contacts[0].name}
               img={Contacts[0].imgURL}
               phone={Contacts[0].phone}
               email={Contacts[0].email}/>
@@ -28,7 +46,7 @@ function App() {
       <Card name= {Contacts[3].name}
               img={Contacts[3].imgURL}
               phone={Contacts[3].phone}
-              email={Contacts[3].email}/>
+              email={Contacts[3].email}/> */}
     </div>
   </div>
   );
