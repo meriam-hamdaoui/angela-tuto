@@ -1,12 +1,12 @@
 import App from './App';
-import App1 from './components/template/App1';
+import App1 from './components/component/template/App1';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 // var React = require('react');old way
 import ReactDOM from 'react-dom';
-import Styling from './components/styling/Styling';
-import Greeting from './components/greeting/Greeting';
+import Styling from './components/component/styling/Styling';
+import Greeting from './components/component/greeting/Greeting';
 import Heading from './components/component/Heading';
 // var ReactDOM = require('react-dom'); old way
 
