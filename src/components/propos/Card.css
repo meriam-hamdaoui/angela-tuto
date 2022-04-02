@@ -1,0 +1,19 @@
+.Card{
+    align-self: center;
+    width: 70%;
+    /* height: 150px; */
+    border: 1px solid black;
+}
+.card-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-top img{
+    width:200px;
+    clip-path:ellipse(40% 40%);
+}
+.card-bottom{
+    border: 1px solid red;
+    bottom: 0;
+}

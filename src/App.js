@@ -3,15 +3,17 @@ import './App.css';
 import Foot from './components/Foot/Foot';
 import Head from './components/Head/Head';
 import Note from './components/Notes/Note';
+import Contacts from './components/propos/Contacts';
 
 function App() {
   // const user = "souad";
   // var num = 10;
   return (
     <div className="App">
-      <Head />
+      <Contacts />
+      {/* <Head />
       <Note />
-      <Foot />
+      <Foot /> */}
       {/* <h1>This is heading</h1>
         <ul>
             this is a list
