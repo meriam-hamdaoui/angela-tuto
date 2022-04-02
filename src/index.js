@@ -7,12 +7,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Styling from './components/styling/Styling';
 import Greeting from './components/greeting/Greeting';
+import Heading from './components/component/Heading';
 // var ReactDOM = require('react-dom'); old way
 
 
 // ReactDOM.render(what to show, where to show, callback function)
 ReactDOM.render(
     <div className='body'>
+        <Heading />
         <h1 className='h1'>introduction to react js</h1>
         <App />
         <h1 className='h1'>template literal and dynamic variable</h1>
