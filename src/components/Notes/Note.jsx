@@ -1,11 +1,11 @@
 import React from 'react';
 import './Note.css';
 
-function Note() {
+function Note(props) {
   return (
     <div className='Note'>
-      <h1 className='noteh'>The head note</h1>
-      <p className='notep'>the note content</p>
+      <h1 className='noteh'>{props.title}</h1>
+      <p className='notep'>{props.content}</p>
     </div>
   )
 }

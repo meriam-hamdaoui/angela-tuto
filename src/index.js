@@ -13,8 +13,8 @@ import AppEmoji from './AppEmoji';
 
 
 // ReactDOM.render(what to show, where to show, callback function)
-ReactDOM.render( <AppEmoji />
-    // <App /><div className='body'>
+ReactDOM.render( <App />
+    // <AppEmoji /><div className='body'>
     //     <Heading />
     //     <h1 className='h1'>introduction to react js</h1>
     //     <App />

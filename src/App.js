@@ -1,21 +1,22 @@
 import React from 'react';
 import './App.css';
-// import Foot from './components/Foot/Foot';
-// import Head from './components/Head/Head';
-// import Note from './components/Notes/Note';
-import Contacts from './components/propos/Contacts';
+import Foot from './components/Foot/Foot';
+import Head from './components/Head/Head';
+import Note from './components/Notes/Note';
+// import Contacts from './components/propos/Contacts';
 import Card from './components/propos/Card';
+import notes from './components/Notes/Notes';
 
 
 // create a new card component
-function createCard(contact){
-  return <Card
-            key={contact.id} 
-            name={contact.name}
-            img={contact.imgURL}
-            phone={contact.phone}
-            email={contact.email}/>
-}
+// function createCard(contact){
+//   return <Card
+//             key={contact.id} 
+//             name={contact.name}
+//             img={contact.imgURL}
+//             phone={contact.phone}
+//             email={contact.email}/>
+// }
 
 
 function App() {
@@ -23,12 +24,23 @@ function App() {
   // var num = 10;
   return (
   <div className='App'>
-    <h1>Contact List</h1>
-    <div className='contact-grid'>
+        <Head />
+        {notes.map((note) => <Note 
+                                key={note.id} 
+                                name={note.name}
+                                content={note.content}/>)}
+        <Foot />
+ </div>
+  );
+}
+    {/* <h1>Contact List</h1>
+    <div className='contact-grid'> */}
+        
+
       {/* mapping throw contact array instead of repeating <Card /> 
       and we should wrapped indide {} to be interpreted as JS*/}
 
-      {Contacts.map(createCard)}
+      {/* {Contacts.map(createCard)} */}
 
 
       {/* <Card name= {Contacts[0].name}
@@ -47,10 +59,8 @@ function App() {
               img={Contacts[3].imgURL}
               phone={Contacts[3].phone}
               email={Contacts[3].email}/> */}
-    </div>
-  </div>
-  );
-}
+   
+
 
 
 
