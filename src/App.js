@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Foot from './components/Foot/Foot';
 import Head from './components/Head/Head';
+import Note from './components/Notes/Note';
 
 function App() {
   // const user = "souad";
@@ -9,6 +10,8 @@ function App() {
   return (
     <div className="App">
       <Head />
+      <Note />
+      <Foot />
       {/* <h1>This is heading</h1>
         <ul>
             this is a list
@@ -17,8 +20,7 @@ function App() {
             <li>item 3</li>
         </ul> */}
         {/* using template literale to render a dynamic value */}
-        {/* <p>{user} s random number is {Math.floor(Math.random() * 10)}</p> */}
-        <Foot />
+        {/* <p>{user} s random number is {Math.floor(Math.random() * 10)}</p> */}        
     </div>
   );
 }
