@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 // var React = require('react');old way
 import ReactDOM from 'react-dom';
+import AppEmoji from './AppEmoji';
 // import Styling from './components/component/styling/Styling';
 // import Greeting from './components/component/greeting/Greeting';
 // import Heading from './components/component/Heading';
@@ -12,8 +13,8 @@ import ReactDOM from 'react-dom';
 
 
 // ReactDOM.render(what to show, where to show, callback function)
-ReactDOM.render( <App />
-    // <div className='body'>
+ReactDOM.render( <AppEmoji />
+    // <App /><div className='body'>
     //     <Heading />
     //     <h1 className='h1'>introduction to react js</h1>
     //     <App />
